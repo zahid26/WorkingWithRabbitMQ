@@ -44,7 +44,7 @@ python publish_images_to_queue.py
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/project.git
+   https://github.com/zahid26/WorkingWithRabbitMQ.git
    ```
 
 2. Install dependencies:
