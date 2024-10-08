@@ -5,7 +5,19 @@ This project consists of two Python scripts designed to handle messages related 
 
 ## Files Overview
 
-### 1. `consume_inference_messages.py`
+### 1. `publish_images_to_queue.py`
+This script handles the task of publishing images to a message queue. It reads images from a specified directory and publishes them to the queue for further processing.
+
+#### Features
+- Reads images from a local directory.
+- Publishes images to a queue for processing.
+
+#### Usage
+```bash
+python publish_images_to_queue.py
+```
+
+### 2. `consume_inference_messages.py`
 This script is responsible for consuming messages related to inference. It listens to a queue, retrieves messages, and processes the inference results.
 
 #### Features
@@ -16,18 +28,6 @@ This script is responsible for consuming messages related to inference. It liste
 #### Usage
 ```bash
 python consume_inference_messages.py
-```
-
-### 2. `publish_images_to_queue.py`
-This script handles the task of publishing images to a message queue. It reads images from a specified directory and publishes them to the queue for further processing.
-
-#### Features
-- Reads images from a local directory.
-- Publishes images to a queue for processing.
-
-#### Usage
-```bash
-python publish_images_to_queue.py
 ```
 
 ## Prerequisites
