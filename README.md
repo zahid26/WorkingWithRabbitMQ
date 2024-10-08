@@ -1,5 +1,5 @@
 
-# Project Name
+# Working With rabbitmq
 
 This project consists of two Python scripts designed to handle messages related to inference and publish images to a message queue. Below is an overview of each script and how to use them.
 
@@ -33,7 +33,12 @@ python publish_images_to_queue.py
 ## Prerequisites
 
 - Python 3.x
-- Required libraries (add them as necessary, e.g., `pika` for RabbitMQ, `boto3` for AWS SQS, etc.)
+- Pika
+- Opencv-Python
+- Ultralytics
+- Numpy
+- Loguru
+- os
 
 ## Installation
 
@@ -47,10 +52,3 @@ python publish_images_to_queue.py
    pip install -r requirements.txt
    ```
 
-## Configuration
-
-Ensure that the message queue (e.g., RabbitMQ, AWS SQS) is properly configured and that you have the necessary connection details in the environment variables or a configuration file.
-
-## License
-
-This project is licensed under the MIT License.
