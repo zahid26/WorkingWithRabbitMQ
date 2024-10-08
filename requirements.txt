@@ -1,0 +1,6 @@
+
+pika
+ultralytics
+numpy
+loguru
+opencv-python
