@@ -18,7 +18,7 @@ model = YOLO("yolov8s.pt")
 
 def connect_rabbitmq():
     """Connect to RabbitMQ"""
-    connection = pika.BlockingConnection(pika.ConnectionParameters('192.168.1.145'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters('localhost')) # localhost- ip address of your rabbitmq machine
     channel = connection.channel()
     channel.queue_declare(queue='image_queue')
     return channel, connection
